@@ -1,5 +1,6 @@
-> 프로젝트가 실행되는 환경에 대한 정보를 가지고 있다.     
-> 버블 안으로 들어가는 방법 : 
+> 프로젝트가 실행되는 환경에 대한 정보를 가지고 있다.  
+> 버블 안으로 들어가는 방법 :
+
 ```
 $poetry init
 $poetry add django
@@ -15,7 +16,7 @@ $exit
 각 파일의 의미
 
 ```
-django-admin startproject config . 
+django-admin startproject config .
 
 ```
 
@@ -27,10 +28,10 @@ about OOP
 
 ```
 //class
-// __init__(self):  
+// __init__(self):
 모든 Python class 안에 있는 모든 메서드는 첫 번쨰 인자로 self를 넘겨받는다.
-//inheritance :  
-nico = Fan("nico", "blue") <- Fan class의 __init__을 호출 
+//inheritance :
+nico = Fan("nico", "blue") <- Fan class의 __init__을 호출
 property /attribute
 
 메소드 오버라이딩
@@ -45,35 +46,51 @@ dir(jia) <- 객체의 클레스의 메소드, property를 확인
 ```
 
 ## Django Basic
+
 terminal에서 Django를 실행하기 위한 파일 : manage.py
+
 ```
 pytho manage.py runserver
 ```
- about port
 
+about port
 
- logger
+logger
 
- django_session
+django_session
 
 migration / migration file apply/ modify shape
+
 ```
 python manage.py migration
 ```
 
 super user
+
 ```
 python manage.py createsuperuser
 ```
-Framework vs Library   
+
+Framework vs Library  
 you call Library
-framework call our code   
-프레임워크는 코드가 작성된 위치를 보고, 코드가 올바른 위치에 있다면,    
+framework call our code  
+프레임워크는 코드가 작성된 위치를 보고, 코드가 올바른 위치에 있다면,  
 우리의 코드를 호출한다.
 
-applications : apps   
-장고 app은 application logic과 dataf를 합쳐서 캡슐화한다.    
+applications : apps  
+장고 app은 application logic과 dataf를 합쳐서 캡슐화한다.  
 각각 분리시킬 수 있는 module seperate!!!
 
 ## Django Model
+
 **Model** : application에서 데이터의 형태를 정의한 것
+
+```
+python manage.py startapp houses
+//models.py
+//admin.py
+python manage.py makemigrations
+python manage.py migrate
+```
+
+## User App
