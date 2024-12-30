@@ -13,6 +13,10 @@ $django-admin
 $exit
 ```
 
+Pylance?  : python server for VScode   
+select python 옆의 가상환경    
+formatter black    
+
 각 파일의 의미
 
 ```
@@ -94,3 +98,5 @@ python manage.py migrate
 ```
 
 ## User App
+
+공식문서 참고 : set up User Model! extend! from the start!

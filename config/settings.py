@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 CUSTOM_APPS =[
     'houses.apps.HousesConfig',
+
 ]
 
 SYSTEM_APPS = [
@@ -127,3 +128,6 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+#Auth
+AUTH_USER_MODEL = 'user.User'
