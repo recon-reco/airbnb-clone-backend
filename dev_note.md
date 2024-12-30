@@ -100,3 +100,8 @@ python manage.py migrate
 ## User App
 
 공식문서 참고 : set up User Model! extend! from the start!
+
+model을 변경할 때마다 makemigrations -> migrate   
+=> for Python코드에 있는 모델 구조와 데이터베이스의 구조를 서로 동기화하기 위해서
+
+field set : 필드 순서대로 
