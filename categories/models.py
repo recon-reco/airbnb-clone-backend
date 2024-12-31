@@ -14,7 +14,7 @@ class Category(CommonModel):
     )
 
     def __str__(self) ->str:
-        return f"{self.kind.title()}:{self.name}"
+        return f"{self.kind.title()}:{self.name}"#title() 문자열 메서드 to Capital
 
     class Meta:
         verbose_name_plural = "Categories"
