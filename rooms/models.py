@@ -1,7 +1,7 @@
 from django.db import models
 from common.models import CommonModel
 # Create your models here.
-class Room(models.Model):
+class Room(CommonModel):
     """Room Model Definition"""
     class RoomKindChoices(models.TextChoices):
         ENTIRE_PLACE = ("entired_place", "Entire Place")
