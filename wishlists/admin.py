@@ -1,7 +1,7 @@
 from django.contrib import admin
-from .models import WishList
+from .models import Wishlist
 
-@admin.register(WishList)
+@admin.register(Wishlist)
 class WishlistAdmin(admin.ModelAdmin):
     list_display = (
         "name",
