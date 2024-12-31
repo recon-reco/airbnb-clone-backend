@@ -1,5 +1,5 @@
 from django.db import models
-
+from common.models import CommonModel
 # Create your models here.
 class Room(models.Model):
     """Room Model Definition"""
@@ -19,10 +19,9 @@ class Room(models.Model):
     owner = models.ForeignKey("users.User", on_delete=models.CASCADE)
     #room application 안의 Amenity Model
     amenities = models.ManyToManyField("rooms.Amenity")
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
+  
 
-class Amenity(models.Model):
+class Amenity(CommonModel):
     """Amenity Model Definition"""
     name = models.CharField(max_length=150,)
     description = models.CharField(max_length=150, default="", null=True,)
