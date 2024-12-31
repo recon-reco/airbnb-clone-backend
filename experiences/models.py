@@ -16,8 +16,16 @@ class Experience(CommonModel):
     start = models.TimeField()
     end = models.TimeField()
     description = models.TextField()
+
     perks = models.ManyToManyField(
         "experiences.Perk",
+    )
+
+    category = models.ForeignKey(
+        "categories.Category",
+        null = True,
+        blank=True,
+        on_delete=models.SET_NULL, #category가 delete되어도 experience는 남는다.
     )
 
     def __str__(self) -> str:
