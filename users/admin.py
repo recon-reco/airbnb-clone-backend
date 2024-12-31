@@ -8,11 +8,11 @@ class CustomUserAdmin(UserAdmin):
     fieldsets = (
         ("Profile", {
                 "fields":(
-                    "avartar",
+                    "avatar",
                     "username",
                     "password",
                     "name",
-                    "is_host"
+                    "is_host",
                     "gender",
                     "language",
                     "currency",
