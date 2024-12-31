@@ -17,6 +17,10 @@ class Room(models.Model):
     pet_friendly = models.BooleanField(default=True,)
     kind = models.CharField(max_length=20, choices=RoomKindChoices,)
     owner = models.ForeignKey("users.User", on_delete=models.CASCADE)
+    #room application 안의 Amenity Model
+    amenities = models.ManyToManyField("rooms.Amenity")
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
 
 class Amenity(models.Model):
     """Amenity Model Definition"""

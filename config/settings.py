@@ -30,9 +30,10 @@ ALLOWED_HOSTS = []
 
 # Application definition
 CUSTOM_APPS =[
+    'common.apps.CommonConfig',
     'houses.apps.HousesConfig',
     'users.apps.UsersConfig',
-    'rooms.apps.RoomsCongig',
+    'rooms.apps.RoomsConfig',
 ]
 
 SYSTEM_APPS = [

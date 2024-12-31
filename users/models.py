@@ -22,3 +22,4 @@ class User(AbstractUser):
     language = models.CharField(max_length=2, choices=LanguageChioces.choices,)
     currency = models.CharField(max_length=5, choices=CurrencyChoices.choices,)
     
+    
