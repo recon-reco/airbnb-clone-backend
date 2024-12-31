@@ -20,6 +20,7 @@ class Review(CommonModel):
         blank=True,
         on_delete=models.CASCADE,
     )
+    #content of review 
     payload = models.TimeField()
     rating = models.PositiveIntegerField()
 
