@@ -7,8 +7,18 @@ class CustomUserAdmin(UserAdmin):
     #make own section 
     fieldsets = (
         ("Profile", {
-                "fields":("username","password","name","is_host"),
-                     }
+                "fields":(
+                    "avartar",
+                    "username",
+                    "password",
+                    "name",
+                    "is_host"
+                    "gender",
+                    "language",
+                    "currency",
+                ),
+                "classes" : ("wide",),
+            }
         ),
         ("Permissions", {
                 "fields": (
@@ -18,13 +28,13 @@ class CustomUserAdmin(UserAdmin):
                     "groups",
                     "user_permissions",
                 ),
-                "classes":("wide",)
+                "classes":("wide",),
             },
         ),
         ("Important dates", {
             "fields": ("last_login", "date_joined"),
-            "classes":("collapse",)
+            "classes":("collapse",),
             }
         ),
     )
-    list_display = ("username", "email", "name", "is_host")
+    list_display = ("username", "email", "name", "is_host",),
